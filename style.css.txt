@@ -1,0 +1,115 @@
+/* ==========================================================================
+   1. GLOBAL RESETS & STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding doesn't affect overall widths */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f7f6; /* Soft light gray background */
+    color: #333333;            /* Dark gray text for readability */
+}
+
+/* ==========================================================================
+   2. TYPOGRAPHY & HEADER
+   ========================================================================== */
+.main-header {
+    background-color: #2c3e50; /* Deep blue background */
+    color: #ffffff;            /* White text */
+    text-align: center;
+    padding: 2rem 1rem;       /* Top/Bottom and Left/Right spacing */
+}
+
+.main-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   3. LAYOUT CONTAINER (FLEXBOX)
+   ========================================================================== */
+.container {
+    max-width: 1100px;
+    margin: 2rem auto;         /* Centers the container horizontally */
+    padding: 0 1rem;
+    
+    /* Layout using Flexbox */
+    display: flex;
+    flex-direction: row;       /* Side-by-side elements */
+    gap: 20px;                 /* Space between items */
+    justify-content: center;
+}
+
+/* ==========================================================================
+   4. CARD COMPONENTS (BOX MODEL)
+   ========================================================================== */
+.card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;        /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle depth shadow */
+    flex: 1;                   /* Cards will stretch equally to fill space */
+}
+
+.card h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 20px;
+}
+
+/* ==========================================================================
+   5. UI COMPONENTS (BUTTONS & INTERACTION)
+   ========================================================================== */
+.btn {
+    display: inline-block;
+    background-color: #3498db; /* Bright blue button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;           /* Changes cursor to a hand symbol on hover */
+    text-decoration: none;
+    transition: background 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover state pseudo-class */
+.btn:hover {
+    background-color: #2980b9; /* Darker blue when hovered */
+}
+
+/* Secondary Button Modifier style */
+.btn-secondary {
+    background-color: #e67e22; /* Orange color */
+}
+
+.btn-secondary:hover {
+    background-color: #d35400;
+}
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+.main-footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #2c3e50;
+    color: #ffffff;
+    margin-top: 4rem;
+}
+
+/* ==========================================================================
+   7. RESPONSIVE DESIGN (MEDIA QUERY)
+   ========================================================================== */
+/* When the screen width is 768px or smaller (like mobile phones) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Stack cards vertically instead of horizontally */
+    }
+}
