@@ -1,16 +1,1919 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Webpage</title>
-</head>
-<body>
 
-    <h1>Welcome to My Website</h1>
-    <p>This is a simple paragraph of text introducing my new site.</p>
-    
-    <a href="https://www.google.com">Click here to visit Google</a>
+<head>
+
+    <!-- =========================================================
+         BASIC META
+         ========================================================= -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="STYLONYX — Lifestyle & Technology. Premium technology, automotive accessories, mobile devices, laptops and lifestyle products."
+    >
+
+    <meta
+        name="theme-color"
+        content="#050207"
+    >
+
+    <meta
+        name="color-scheme"
+        content="dark"
+    >
+
+
+    <!-- =========================================================
+         SEO / SOCIAL
+         ========================================================= -->
+
+    <meta
+        property="og:title"
+        content="STYLONYX — Lifestyle & Technology"
+    >
+
+    <meta
+        property="og:description"
+        content="Premium product reviews, technology, automotive accessories and lifestyle innovation."
+    >
+
+    <meta
+        property="og:type"
+        content="website"
+    >
+
+
+    <!-- =========================================================
+         TITLE
+         ========================================================= -->
+
+    <title>
+        STYLONYX — Lifestyle & Technology
+    </title>
+
+
+    <!-- =========================================================
+         FONTS
+         NOTE:
+         Your CSS already contains @import fonts.
+         These preload links simply improve loading performance.
+         ========================================================= -->
+
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+
+    <!-- =========================================================
+         MAIN CSS
+         ========================================================= -->
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+</head>
+
+
+<body class="loading">
+
+
+    <!-- =========================================================
+         ACCESSIBILITY
+         ========================================================= -->
+
+    <a
+        href="#main-content"
+        class="skip-link"
+        style="
+            position:absolute;
+            left:-9999px;
+            top:auto;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+        "
+    >
+        Skip to main content
+    </a>
+
+
+
+    <!-- =========================================================
+         CUSTOM CURSOR
+         Used by GSAP JavaScript
+         ========================================================= -->
+
+    <div
+        class="cursor"
+        aria-hidden="true"
+    ></div>
+
+    <div
+        class="cursor-dot"
+        aria-hidden="true"
+    ></div>
+
+
+
+    <!-- =========================================================
+         PAGE LOADER
+         Used by GSAP JavaScript
+         ========================================================= -->
+
+    <div
+        class="loader"
+        aria-hidden="true"
+    >
+
+        <div class="loader-inner">
+
+            <div class="loader-number">
+                0
+            </div>
+
+            <div class="loader-line">
+
+                <span></span>
+
+            </div>
+
+            <p>
+                Initializing STYLONYX
+            </p>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================================
+         FIXED NAVIGATION
+         ========================================================= -->
+
+    <header
+        class="site-header"
+        id="site-header"
+    >
+
+
+        <!-- BRAND -->
+
+        <a
+            href="#hero"
+            class="logo magnetic"
+            aria-label="STYLONYX home"
+        >
+
+            STYL<span>Ø</span>NYX
+
+        </a>
+
+
+        <!-- DESKTOP NAVIGATION -->
+
+        <nav
+            class="nav"
+            aria-label="Main navigation"
+        >
+
+            <a href="#about">
+                About
+            </a>
+
+            <a href="#work">
+                Reviews
+            </a>
+
+            <a href="#products">
+                Products
+            </a>
+
+            <a href="#services">
+                Explore
+            </a>
+
+            <a href="#contact">
+                Contact
+            </a>
+
+        </nav>
+
+
+        <!-- NAV CTA -->
+
+        <a
+            href="#products"
+            class="nav-cta magnetic"
+        >
+
+            Discover
+
+            <span aria-hidden="true">
+                ↗
+            </span>
+
+        </a>
+
+    </header>
+
+
+
+    <!-- =========================================================
+         MAIN CONTENT
+         ========================================================= -->
+
+    <main id="main-content">
+
+
+
+        <!-- =====================================================
+             HERO
+             ===================================================== -->
+
+        <section
+            class="hero"
+            id="hero"
+        >
+
+
+            <!-- HERO BACKGROUND IMAGE -->
+
+            <div class="hero-bg">
+
+                <img
+                    src="assets/hero-tech.jpg"
+                    alt=""
+                    width="1920"
+                    height="1080"
+                >
+
+            </div>
+
+
+            <!-- DARK / PURPLE OVERLAY -->
+
+            <div class="hero-overlay"></div>
+
+
+            <!-- AMBIENT BRAND LIGHT -->
+
+            <div
+                class="hero-orb hero-orb-one"
+                aria-hidden="true"
+            ></div>
+
+            <div
+                class="hero-orb hero-orb-two"
+                aria-hidden="true"
+            ></div>
+
+
+            <!-- HERO CONTENT -->
+
+            <div class="hero-content">
+
+
+                <p class="eyebrow hero-eyebrow">
+
+                    Lifestyle & Technology
+
+                    <br>
+
+                    Curated for the way you live.
+
+                </p>
+
+
+                <h1 class="hero-title">
+
+
+                    <span class="hero-line">
+
+                        <span>
+                            DISCOVER
+                        </span>
+
+                    </span>
+
+
+                    <span
+                        class="hero-line hero-line-right"
+                    >
+
+                        <span>
+                            SMARTER
+                        </span>
+
+                    </span>
+
+
+                    <span class="hero-line">
+
+                        <span>
+                            TECHNOLOGY.
+                        </span>
+
+                    </span>
+
+
+                </h1>
+
+
+                <div class="hero-bottom">
+
+
+                    <p class="hero-description">
+
+                        Premium technology, mobile devices,
+                        laptops, automotive accessories and
+                        lifestyle products — researched,
+                        tested and presented with clarity.
+
+                    </p>
+
+
+                    <a
+                        href="#about"
+                        class="scroll-indicator magnetic"
+                    >
+
+                        <span class="scroll-circle">
+
+                            ↓
+
+                        </span>
+
+                        <span>
+                            Explore
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+            <!-- HERO PAGE INDEX -->
+
+            <div
+                class="hero-index"
+                aria-hidden="true"
+            >
+
+                <span>
+                    01
+                </span>
+
+                <span>
+                    /
+                </span>
+
+                <span>
+                    07
+                </span>
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             MARQUEE
+             ===================================================== -->
+
+        <section
+            class="marquee"
+            aria-label="STYLONYX categories"
+        >
+
+            <div class="marquee-track">
+
+                <span class="marquee-item">
+                    Technology
+                </span>
+
+                <span class="marquee-item">
+                    Smartphones
+                </span>
+
+                <span class="marquee-item">
+                    Automotive
+                </span>
+
+                <span class="marquee-item">
+                    Accessories
+                </span>
+
+                <span class="marquee-item">
+                    Laptops
+                </span>
+
+                <span class="marquee-item">
+                    Lifestyle
+                </span>
+
+                <span class="marquee-item">
+                    Innovation
+                </span>
+
+                <span class="marquee-item">
+                    Technology
+                </span>
+
+                <span class="marquee-item">
+                    Smartphones
+                </span>
+
+                <span class="marquee-item">
+                    Automotive
+                </span>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             ABOUT / INTRO
+             ===================================================== -->
+
+        <section
+            class="intro section"
+            id="about"
+        >
+
+
+            <div class="section-label">
+
+                <span>
+                    01
+                </span>
+
+                <p>
+                    About STYLONYX
+                </p>
+
+            </div>
+
+
+            <div class="intro-grid">
+
+
+                <div class="intro-left">
+
+                    <p class="eyebrow reveal-up">
+
+                        More than product reviews.
+
+                        <br>
+
+                        Better buying intelligence.
+
+                    </p>
+
+                </div>
+
+
+                <div class="intro-right">
+
+
+                    <h2 class="large-copy split-text">
+
+                        We explore technology,
+                        products and ideas that
+                        make modern life smarter,
+                        simpler and better designed.
+
+                    </h2>
+
+
+                    <p class="intro-copy reveal-up">
+
+                        STYLONYX brings together detailed
+                        product analysis, premium visual
+                        storytelling and practical insight.
+
+                        From emerging technology and mobile
+                        devices to automotive accessories
+                        and lifestyle products, our goal is
+                        simple — help people understand what
+                        deserves their attention.
+
+                    </p>
+
+
+                    <a
+                        href="#work"
+                        class="text-link magnetic"
+                    >
+
+                        Discover our reviews
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             LARGE PARALLAX IMAGE
+             ===================================================== -->
+
+        <section class="feature-image">
+
+
+            <div class="feature-image-wrap">
+
+
+                <img
+                    class="parallax-img"
+                    src="assets/stylonyx-feature.jpg"
+                    alt="Premium technology and lifestyle products"
+                    width="1920"
+                    height="1200"
+                    loading="lazy"
+                >
+
+
+                <div class="feature-caption">
+
+                    <span>
+                        Curated technology
+                    </span>
+
+                    <span>
+                        STYLONYX · 2026
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             SELECTED REVIEWS / PROJECTS
+             ===================================================== -->
+
+        <section
+            class="showcase section"
+            id="work"
+        >
+
+
+            <div class="section-label">
+
+                <span>
+                    02
+                </span>
+
+                <p>
+                    Selected reviews
+                </p>
+
+            </div>
+
+
+            <div class="showcase-heading">
+
+
+                <h2 class="split-text">
+
+                    PRODUCTS
+
+                    <br>
+
+                    WORTH
+
+                    <br>
+
+                    KNOWING.
+
+                </h2>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROJECT / REVIEW 01
+                 ================================================= -->
+
+            <article class="project">
+
+
+                <a
+                    href="#"
+                    class="project-image image-reveal"
+                    aria-label="View smartphone review"
+                >
+
+
+                    <img
+                        src="assets/product-phone.jpg"
+                        alt="Premium smartphone"
+                        width="1600"
+                        height="1100"
+                        loading="lazy"
+                    >
+
+
+                    <div class="project-number">
+
+                        01
+
+                    </div>
+
+
+                </a>
+
+
+                <div class="project-info">
+
+
+                    <div>
+
+
+                        <p class="project-category">
+
+                            Mobile Technology
+
+                        </p>
+
+
+                        <h3>
+
+                            Flagship
+                            Smartphone
+
+                        </h3>
+
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+
+                        <span>
+                            Review
+                        </span>
+
+                        <span>
+                            Camera
+                        </span>
+
+                        <span>
+                            Performance
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT / REVIEW 02
+                 ================================================= -->
+
+            <article
+                class="project project-offset"
+            >
+
+
+                <a
+                    href="#"
+                    class="project-image image-reveal"
+                    aria-label="View car technology review"
+                >
+
+
+                    <img
+                        src="assets/product-car-tech.jpg"
+                        alt="Premium car technology accessory"
+                        width="1600"
+                        height="1100"
+                        loading="lazy"
+                    >
+
+
+                    <div class="project-number">
+
+                        02
+
+                    </div>
+
+
+                </a>
+
+
+                <div class="project-info">
+
+
+                    <div>
+
+
+                        <p class="project-category">
+
+                            Automotive Technology
+
+                        </p>
+
+
+                        <h3>
+
+                            Smarter
+                            Driving
+
+                        </h3>
+
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+
+                        <span>
+                            Automotive
+                        </span>
+
+                        <span>
+                            Accessories
+                        </span>
+
+                        <span>
+                            Tested
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+
+            <!-- =================================================
+                 PROJECT / REVIEW 03
+                 ================================================= -->
+
+            <article class="project">
+
+
+                <a
+                    href="#"
+                    class="project-image image-reveal"
+                    aria-label="View laptop review"
+                >
+
+
+                    <img
+                        src="assets/product-laptop.jpg"
+                        alt="Premium laptop"
+                        width="1600"
+                        height="1100"
+                        loading="lazy"
+                    >
+
+
+                    <div class="project-number">
+
+                        03
+
+                    </div>
+
+
+                </a>
+
+
+                <div class="project-info">
+
+
+                    <div>
+
+
+                        <p class="project-category">
+
+                            Computing
+
+                        </p>
+
+
+                        <h3>
+
+                            Modern
+                            Performance
+
+                        </h3>
+
+
+                    </div>
+
+
+                    <div class="project-meta">
+
+
+                        <span>
+                            Laptop
+                        </span>
+
+                        <span>
+                            Productivity
+                        </span>
+
+                        <span>
+                            Review
+                        </span>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CINEMATIC STATEMENT
+             ===================================================== -->
+
+        <section class="statement">
+
+
+            <div class="statement-bg">
+
+
+                <img
+                    src="assets/statement-tech.jpg"
+                    alt=""
+                    width="1920"
+                    height="1080"
+                    loading="lazy"
+                >
+
+
+            </div>
+
+
+            <div class="statement-overlay"></div>
+
+
+            <div class="statement-content">
+
+
+                <p>
+
+                    Our philosophy
+
+                </p>
+
+
+                <h2 class="statement-title">
+
+
+                    <span>
+                        LESS
+                    </span>
+
+                    <span>
+                        HYPE.
+                    </span>
+
+                    <span>
+                        MORE
+                    </span>
+
+                    <span>
+                        CLARITY.
+                    </span>
+
+
+                </h2>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             HORIZONTAL SERVICES / CONTENT CATEGORIES
+             GSAP EXPECTS:
+             .services-wrapper
+             .horizontal
+             .service-panel
+             ===================================================== -->
+
+        <section
+            class="services-wrapper"
+            id="services"
+        >
+
+
+            <div class="horizontal">
+
+
+
+                <!-- =============================================
+                     PANEL 01
+                     ============================================= -->
+
+                <section
+                    class="service-panel service-intro"
+                >
+
+
+                    <div>
+
+
+                        <p class="eyebrow">
+
+                            What we explore
+
+                        </p>
+
+
+                        <h2>
+
+                            THE
+
+                            <br>
+
+                            STYLONYX
+
+                            <br>
+
+                            WORLD.
+
+                        </h2>
+
+
+                    </div>
+
+
+                    <span class="horizontal-hint">
+
+                        Scroll to explore →
+
+                    </span>
+
+
+                </section>
+
+
+
+                <!-- =============================================
+                     PANEL 02
+                     ============================================= -->
+
+                <section class="service-panel">
+
+
+                    <div class="service-number">
+
+                        01
+
+                    </div>
+
+
+                    <div class="service-panel-content">
+
+
+                        <p>
+
+                            Technology
+
+                        </p>
+
+
+                        <h3>
+
+                            Innovation
+                            that deserves
+                            your attention.
+
+                        </h3>
+
+
+                        <ul>
+
+
+                            <li>
+                                Smartphones
+                            </li>
+
+                            <li>
+                                AI Devices
+                            </li>
+
+                            <li>
+                                Wearables
+                            </li>
+
+                            <li>
+                                Smart Tech
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =============================================
+                     PANEL 03
+                     ============================================= -->
+
+                <section
+                    class="service-panel service-panel-image"
+                >
+
+
+                    <img
+                        src="assets/service-automotive.jpg"
+                        alt="Automotive accessories"
+                        width="1600"
+                        height="1000"
+                        loading="lazy"
+                    >
+
+
+                    <div class="service-number">
+
+                        02
+
+                    </div>
+
+
+                    <div class="service-panel-content">
+
+
+                        <p>
+
+                            Automotive
+
+                        </p>
+
+
+                        <h3>
+
+                            Smarter products
+                            for the modern
+                            driving experience.
+
+                        </h3>
+
+
+                        <ul>
+
+
+                            <li>
+                                Car Accessories
+                            </li>
+
+                            <li>
+                                Mounts
+                            </li>
+
+                            <li>
+                                Dash Technology
+                            </li>
+
+                            <li>
+                                Smart Driving
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =============================================
+                     PANEL 04
+                     ============================================= -->
+
+                <section class="service-panel">
+
+
+                    <div class="service-number">
+
+                        03
+
+                    </div>
+
+
+                    <div class="service-panel-content">
+
+
+                        <p>
+
+                            Computing
+
+                        </p>
+
+
+                        <h3>
+
+                            Powerful tools
+                            for work,
+                            creativity and life.
+
+                        </h3>
+
+
+                        <ul>
+
+
+                            <li>
+                                Laptops
+                            </li>
+
+                            <li>
+                                Monitors
+                            </li>
+
+                            <li>
+                                Keyboards
+                            </li>
+
+                            <li>
+                                Productivity
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- =============================================
+                     PANEL 05
+                     ============================================= -->
+
+                <section
+                    class="service-panel last-panel"
+                >
+
+
+                    <div class="service-number">
+
+                        04
+
+                    </div>
+
+
+                    <div class="service-panel-content">
+
+
+                        <p>
+
+                            Lifestyle
+
+                        </p>
+
+
+                        <h3>
+
+                            Products where
+                            technology meets
+                            everyday living.
+
+                        </h3>
+
+
+                        <ul>
+
+
+                            <li>
+                                Home
+                            </li>
+
+                            <li>
+                                Travel
+                            </li>
+
+                            <li>
+                                Everyday Carry
+                            </li>
+
+                            <li>
+                                Innovation
+                            </li>
+
+
+                        </ul>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PRODUCT SHOWCASE
+             ===================================================== -->
+
+        <section
+            class="product-showcase"
+            id="products"
+        >
+
+
+            <div class="product-media">
+
+
+                <img
+                    src="assets/featured-product.jpg"
+                    alt="STYLONYX featured technology product"
+                    width="1400"
+                    height="1500"
+                    loading="lazy"
+                >
+
+
+            </div>
+
+
+            <div class="product-content">
+
+
+                <p class="product-kicker">
+
+                    Featured Product
+
+                </p>
+
+
+                <h2 class="product-title split-text">
+
+                    DESIGN
+                    MEETS
+                    FUNCTION.
+
+                </h2>
+
+
+                <p class="product-description reveal-up">
+
+                    We look beyond specifications.
+
+                    Design, usability, construction,
+                    performance and real-world value
+                    all matter when deciding whether
+                    a product deserves a place in
+                    your life.
+
+                </p>
+
+
+                <div
+                    style="
+                        margin-top: 40px;
+                    "
+                >
+
+
+                    <a
+                        href="#"
+                        class="btn magnetic"
+                    >
+
+                        Explore Review
+
+                        <span aria-hidden="true">
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             FEATURE GRID
+             ===================================================== -->
+
+        <section class="section premium-section">
+
+
+            <div class="section-label">
+
+
+                <span>
+                    03
+                </span>
+
+
+                <p>
+                    What matters
+                </p>
+
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+
+                <!-- FEATURE CARD 01 -->
+
+                <article class="feature-card">
+
+
+                    <span class="feature-card-number">
+
+                        01
+
+                    </span>
+
+
+                    <h3>
+
+                        Design
+
+                    </h3>
+
+
+                    <p>
+
+                        How a product feels,
+                        looks and integrates
+                        into everyday life.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- FEATURE CARD 02 -->
+
+                <article class="feature-card">
+
+
+                    <span class="feature-card-number">
+
+                        02
+
+                    </span>
+
+
+                    <h3>
+
+                        Performance
+
+                    </h3>
+
+
+                    <p>
+
+                        Specifications matter,
+                        but real-world performance
+                        matters more.
+
+                    </p>
+
+
+                </article>
+
+
+
+                <!-- FEATURE CARD 03 -->
+
+                <article class="feature-card">
+
+
+                    <span class="feature-card-number">
+
+                        03
+
+                    </span>
+
+
+                    <h3>
+
+                        Value
+
+                    </h3>
+
+
+                    <p>
+
+                        We examine whether the
+                        experience genuinely
+                        justifies the price.
+
+                    </p>
+
+
+                </article>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             PHILOSOPHY / EDITORIAL
+             ===================================================== -->
+
+        <section class="philosophy section">
+
+
+            <div class="section-label">
+
+
+                <span>
+                    04
+                </span>
+
+
+                <p>
+                    Our approach
+                </p>
+
+
+            </div>
+
+
+            <div class="philosophy-grid">
+
+
+                <div class="philosophy-image">
+
+
+                    <img
+                        class="parallax-small"
+                        src="assets/philosophy-tech.jpg"
+                        alt="Modern premium technology"
+                        width="1200"
+                        height="1500"
+                        loading="lazy"
+                    >
+
+
+                </div>
+
+
+                <div class="philosophy-copy">
+
+
+                    <p class="eyebrow reveal-up">
+
+                        Research before recommendation.
+
+                    </p>
+
+
+                    <h2 class="split-text">
+
+                        BEAUTIFUL
+                        PRODUCTS
+                        STILL NEED
+                        TO WORK.
+
+                    </h2>
+
+
+                    <p class="body-copy reveal-up">
+
+                        STYLONYX evaluates products
+                        through more than appearance.
+
+                        Practical usefulness, engineering,
+                        build quality, performance,
+                        usability and long-term value
+                        all contribute to the final
+                        experience.
+
+                    </p>
+
+
+                    <a
+                        href="#contact"
+                        class="text-link magnetic"
+                    >
+
+                        Work with STYLONYX
+
+                        <span>
+                            ↗
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             METRICS
+             JS COUNTERS USE data-value
+             ===================================================== -->
+
+        <section
+            class="metrics"
+            aria-label="STYLONYX statistics"
+        >
+
+
+            <article class="metric">
+
+
+                <span
+                    class="metric-number"
+                    data-value="100"
+                >
+                    0
+                </span>
+
+                <span class="metric-symbol">
+                    +
+                </span>
+
+                <p>
+                    Products explored
+                </p>
+
+
+            </article>
+
+
+            <article class="metric">
+
+
+                <span
+                    class="metric-number"
+                    data-value="25"
+                >
+                    0
+                </span>
+
+                <span class="metric-symbol">
+                    +
+                </span>
+
+                <p>
+                    Technology categories
+                </p>
+
+
+            </article>
+
+
+            <article class="metric">
+
+
+                <span
+                    class="metric-number"
+                    data-value="10"
+                >
+                    0
+                </span>
+
+                <span class="metric-symbol">
+                    +
+                </span>
+
+                <p>
+                    Product verticals
+                </p>
+
+
+            </article>
+
+
+            <article class="metric">
+
+
+                <span
+                    class="metric-number"
+                    data-value="100"
+                >
+                    0
+                </span>
+
+                <span class="metric-symbol">
+                    %
+                </span>
+
+                <p>
+                    Focus on useful insight
+                </p>
+
+
+            </article>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT / FINAL CTA
+             ===================================================== -->
+
+        <section
+            class="contact"
+            id="contact"
+        >
+
+
+            <div
+                class="brand-glow"
+                style="
+                    top:-180px;
+                    right:-180px;
+                "
+                aria-hidden="true"
+            ></div>
+
+
+            <div
+                class="gold-glow"
+                style="
+                    bottom:5%;
+                    left:15%;
+                "
+                aria-hidden="true"
+            ></div>
+
+
+            <div class="contact-content">
+
+
+                <p class="eyebrow contact-eyebrow">
+
+                    Partnerships · Products · Collaborations
+
+                </p>
+
+
+                <h2 class="contact-title">
+
+
+                    <span class="contact-line">
+
+                        <span>
+                            LET'S BUILD
+                        </span>
+
+                    </span>
+
+
+                    <span class="contact-line">
+
+                        <span>
+                            SOMETHING
+                        </span>
+
+                    </span>
+
+
+                    <span class="contact-line">
+
+                        <span>
+                            REMARKABLE.
+                        </span>
+
+                    </span>
+
+
+                </h2>
+
+
+                <a
+                    href="mailto:hello@stylonyx.com"
+                    class="contact-button magnetic"
+                    aria-label="Email STYLONYX"
+                >
+
+
+                    <span>
+
+                        Contact Us
+
+                    </span>
+
+
+                    <span
+                        class="contact-arrow"
+                        aria-hidden="true"
+                    >
+
+                        ↗
+
+                    </span>
+
+
+                </a>
+
+
+            </div>
+
+
+
+            <!-- =================================================
+                 FOOTER
+                 ================================================= -->
+
+            <footer>
+
+
+                <div>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        YouTube
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Instagram
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Facebook
+                    </a>
+
+
+                    <a
+                        href="#"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        TikTok
+                    </a>
+
+
+                </div>
+
+
+                <p>
+
+                    © 2026 STYLONYX
+
+                </p>
+
+
+                <a href="#hero">
+
+                    Back to top ↑
+
+                </a>
+
+
+            </footer>
+
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- =========================================================
+         GSAP CORE
+         ========================================================= -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    ></script>
+
+
+
+    <!-- =========================================================
+         GSAP SCROLLTRIGGER
+         ========================================================= -->
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+    ></script>
+
+
+
+    <!-- =========================================================
+         YOUR STYLONYX JAVASCRIPT
+         ========================================================= -->
+
+    <script src="script.js"></script>
+
 
 </body>
+
 </html>
